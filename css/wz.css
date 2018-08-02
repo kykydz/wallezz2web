@@ -77,16 +77,15 @@ span.bolder0.ft-wht { color: white }
     justify-content: center;
     flex-wrap: wrap;
 }
-.cellz-3 {
-    flex: 1 1 calc(100%/3);
-}
-.cellz-2 {
-    flex: 0 0 calc(100%/2);
-}
-.cellz-6 {
-    flex: 0 0 calc(100%/10);
-}
+.cellz-d3 { flex: 1 1 calc(100%/3); }
+.cellz-d4 { flex: 0 0 25%; max-width: 25%;}
+.cellz-d2 { flex: 0 0 calc(100%/2); }
+
+.cellz-1 { flex: 0 0 100%; max-width: 100%}
+.cellz-6 { flex: 0 0 calc(100%/10); }
 .cellz-3 { flex: 0 0 30%; max-width: 30%;}
+.cellz-4 { flex: 0 0 40%; max-width: 40%;}
+
 .cellz-7 { flex: 0 0 70%; max-width: 70%;} 
 .cellz-5 { flex: 0 0 50%; max-width: 50%;}
 .labelz {
@@ -317,11 +316,12 @@ span.bolder0 { color: #0e52de }
 #sectmu {
     /*background: linear-gradient(to right, rgba(42,160,250,1) 0%, rgba(0,45,209,1) 100%);*/
     /*background-color: #E84176;*/
-    /*background: linear-gradient(to right, rgba(21,188,221,1) 0%, rgba(21,188,221,1) 50%, 
+    /*background: linear-gradient(to right, rgba(21,188,221,1) 0%, rgba(21,188,221,1) 50%, */
         rgba(232,65,118,1) 50%, rgba(232,65,118,1) 100%);
-    background: linear-gradient(to right, rgba(232,65,118,1) 0%, rgba(232,65,118,1) 50%, 
-        rgba(21,188,221,1) 50%, rgba(21,188,221,1) 100%);*/
-        background: linear-gradient(to right, #dd3366 0%, #dd3366 26%, #f24e85 50%, #00bcdd 50%, #00bcdd 50%, #00bcdd 50%, #1188dd 74%, #1188dd 100%);
+    /*background: linear-gradient(to right, rgba(232,65,118,1) 0%, rgba(232,65,118,1) 50%, 
+        rgba(21,188,221,1) 50%, rgba(21,188,221,1) 100%);
+        */
+    background: linear-gradient(to right, #dd3366 0%, #dd3366 26%, #f24e85 50%, #00bcdd 50%, #00bcdd 50%, #00bcdd 50%, #1188dd 74%, #1188dd 100%);
     padding-bottom: 7%;
     color: white;
 }
@@ -398,29 +398,6 @@ span.bolder0 { color: #0e52de }
 }
 .feat-foot {
     padding: 5% 3%;
-}
-
-
-/*-------------SECTION SHOP dan EVENT------------*/
-#secteventshop {
-    background-color: white;
-}
-.shopz {
-    width: 50%;
-}
-#secteventshop.flexz {
-    width: 50%;
-    display: flex;
-    flex-flow: row wrap;
-}
-.col-md-12.npm {
-    height: 250px;
-    overflow: hidden;
-}
-.col-md-12.npm img {
-    width: 250px;
-    height: auto;
-    text-align: center;
 }
 
 
@@ -568,8 +545,9 @@ img.img-fitz {
 .imgz-wrap {
     overflow: hidden;
     height: 250px;
-    clip-path: polygon(0% 0%, 100% 0%, 60% 100%, 0% 100%);
 }
+.imgz-wrap--trapesium { clip-path: polygon(0% 0%, 100% 0%, 60% 100%, 0% 100%); }
+
 .imgzky {
     max-width: 100%;
     height: auto;
@@ -626,6 +604,105 @@ a.btn-extra {
     /* border: solid 2px orange; */
 }
 .gsrki {
-    margin-left: -261px;
+    margin-left: -290px;
     margin-top: -40px;
+}
+
+/*-------------SECTION SHOP dan EVENT------------*/
+#secteventshop {
+    background-color: white;
+}
+.shopz {
+    width: 50%;
+}
+#secteventshop.flexz {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.col-md-12.npm {
+    height: 250px;
+    overflow: hidden;
+}
+.col-md-12.npm img {
+    width: 250px;
+    height: auto;
+    text-align: center;
+}
+.stemz_conh {
+    height: 400px;
+}
+.stemz_conh_imgwrapp {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.stemz_conh_imgwrapp--portrait {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.stemz_conh_imgwrapp--portrait img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.stemz_conh_imgwrapp img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgz-wrap_img-eventshop--mostpop {
+    width: 100%;
+    /* object-fit: cover; */
+    top: -310px;
+    position: relative;
+    /* object-position: 50% 50%; */
+}
+.stemz_conh_imgwrapp_category {
+    position: absolute;
+    z-index: 1;
+    height: 0%;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+.stemz_conh_imgwrapp--portrait:hover > .stemz_conh_imgwrapp_category {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stemz_conh_imgwrapp:hover > .stemz_conh_imgwrapp_category {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*---------CONTACT US--------------------*/
+.formz { 
+    margin: 5%; 
 }
