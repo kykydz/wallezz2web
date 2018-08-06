@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     background: linear-gradient(to right, rgba(42,160,250,1) 0%, rgba(0,45,209,1) 100%);
+    overflow-x: hidden;
 
 }
 div { border: solid 1px black }
@@ -82,7 +83,8 @@ span.bolder0.ft-wht { color: white }
 .cellz-d2 { flex: 0 0 calc(100%/2); }
 
 .cellz-1 { flex: 0 0 100%; max-width: 100%}
-.cellz-6 { flex: 0 0 calc(100%/10); }
+.cellz-2 { flex: 0 0 20%; max-width: 20%}
+.cellz-10 { flex: 0 0 calc(100%/10); }
 .cellz-3 { flex: 0 0 30%; max-width: 30%;}
 .cellz-4 { flex: 0 0 40%; max-width: 40%;}
 
@@ -704,7 +706,7 @@ a.btn-extra {
 
 /*---------CONTACT US--------------------*/
 section#contactus {
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .formz { 
     margin: 5% 15%; 
@@ -741,7 +743,10 @@ textarea,input.form-inlinez_input {
 .cus_img-wrapper h2 {
     color: white;
     text-align: right;
-    font-size: 3em;
+    font-size: 3.3em;
+    position: relative;
+    right: 118px;
+    top: 41px;
 }
 img.cus-img--decor1 {
     position: absolute;
@@ -756,8 +761,49 @@ img.cus-img--decor2 {
     top: 130px;
     width: 70%;
 }
+img.cus-img--decor3 {
+    position: absolute;
+    z-index: -1;
+    right: -83px;
+    top: 100px;
+    opacity: 0.5;
+    width: 90%;
+}
 /*----------------FOOTER-----------------*/
 #footerz {
+    padding: 5%;
     height: 200px;
     /*background-color: white;*/
+}
+.adddrezz {
+    display: inline-block;
+    color: white;
+}
+.addrezz_cp {
+    padding: 1% 2%;
+    color: white;
+    display: inline-block;
+}
+.addrezz_cp i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    /*padding: 2% 4% 2% 1%;*/
+    color: white;
+    float: left;
+    font-size: 25px;
+}
+.foot_cpr {
+    padding: 0% 10%;
+    color: white;
+    text-align: right;
+}
+.foot_cpr-social {
+    padding: 2% 0% 5% 10%;    
+}
+
+.foot_cpr-social i{
+    font-size: 20px;
+    display: inline-block;
+    width: 40px;
 }
