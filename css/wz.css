@@ -703,6 +703,61 @@ a.btn-extra {
 
 
 /*---------CONTACT US--------------------*/
+section#contactus {
+    overflow: hidden;
+}
 .formz { 
-    margin: 5%; 
+    margin: 5% 15%; 
+}
+.form-inlinez {
+    display: block;
+    padding: 2% 1%;
+}
+textarea,input.form-inlinez_input {
+    width: 100%;
+    padding: 1% 4%;
+    border: none;
+    border-radius: 25px;
+/*    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;*/
+}
+#ta-comment {
+    height: 180px;
+    max-height: 250px;
+}
+#ta-comment::-webkit-scrollbar {
+    width: 7px;
+    background-color: #f3f1ef;
+    border-radius: 12px;   
+}
+#ta-comment::-webkit-scrollbar-thumb {
+    background-color: #5a9de0;
+    border-radius: 12px;
+}
+.cus_img-wrapper {
+    position: relative;
+   /* width: 100%;*/
+}
+.cus_img-wrapper h2 {
+    color: white;
+    text-align: right;
+    font-size: 3em;
+}
+img.cus-img--decor1 {
+    position: absolute;
+    left: -30px;
+    top: 60px;
+    width: 25%;
+    transform: scaleX(-1);
+}
+img.cus-img--decor2 {
+    position: absolute;
+    right: -69px;
+    top: 130px;
+    width: 70%;
+}
+/*----------------FOOTER-----------------*/
+#footerz {
+    height: 200px;
+    /*background-color: white;*/
 }
