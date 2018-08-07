@@ -1,3 +1,5 @@
+
+//My Accordion JS
 var acc     = document.getElementsByClassName('accord-title');
       var panel   = document.getElementsByClassName('accord-panel');
       var i, j = 0;
@@ -41,3 +43,18 @@ var acc     = document.getElementsByClassName('accord-title');
       //   });
       // }
       // panel[accIndex-1].style.maxHeight = "200px";
+
+// Modal Show Video JS
+var modal1  = $('#modal1');
+var modal2  = $('#modal2');
+var modal3  = $('#modal3');
+
+// function showvideo(numb) {
+//   var i;
+//   for (i = 0; i < modal1.length; i++) {
+//     console.log("i=" + i);
+//   }
+//   console.log(modal1.length);
+// }
+
+// console.log(modal1.length);

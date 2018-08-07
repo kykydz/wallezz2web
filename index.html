@@ -110,7 +110,7 @@
   						<img src="images/edc.png" class="img-fluid" alt="">
   					</div>
   					<div class="feat-desc">
-  						<h3>ELECTRONIC PAYMENT</h3>
+  						<h3>E-Scanner</h3>
   						<p>Completed electronic payment solution</p>
   						Completed electronic payment solution
   					</div>
@@ -129,7 +129,9 @@
   				</div>
   			</div>
   			<div class="contentz-side">
-  				<img src="images/dummy/d_phone2.png">
+          <div class="stemz_conh_imgwrapp--portrait-sectmu">
+            <img src="images/mcus.png">
+          </div>
   			</div>
   			<div class="contentz-side">
   				<div class="feat-body">
@@ -221,17 +223,45 @@
             <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
           </div>
           <div class="video-content">
-            <img src="images/dummy/gunung0.png">
+            <div class="overlayz">
+              <a onclick="showvideo(0)"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <img src="images/dummy/gunung0.png" >
+          </div>
+          <div id="modalz1" class="modalz-overlay">
+            <div class="modalz-content">
+              <div class="modalz-title">
+                Title: Ocean Motivation
+              </div>
+              <div class="modalz-body">
+                <video src="images/dvideo.mp4" autobuffer controls poster="images/dummy/gunung0.png"></video>
+                <a href="javascript:void(0)" id="cloze" onclick="clozez(0)"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="cellz-d3 pdz2">
           <div class="video-content">
+            <div class="overlayz">
+              <a onclick="showvideo(1)"><i class="fas fa-play-circle"></i></a>
+            </div>
             <img src="images/dummy/gunung1.png">
           </div>
           <div class="video-title">
             <h3>Judul</h3>
             <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
           </div>
+          <div id="modalz1" class="modalz-overlay">
+            <div class="modalz-content">
+              <div class="modalz-title">
+                Title: UUUUUU Motivation
+              </div>
+              <div class="modalz-body">
+                <video src="images/dvideo.mp4" autobuffer controls poster="images/dummy/gunung0.png"></video>
+                <a href="javascript:void(0)" id="cloze" onclick="clozez(1)"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="cellz-d3 pdz2">
           <div class="video-title">
@@ -239,7 +269,21 @@
             <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
           </div>
           <div class="video-content">
+            <div class="overlayz">
+              <a href="javascript:void(0)" onclick="showvideo(2)"><i class="fas fa-play-circle"></i></a>
+            </div>
             <img src="images/dummy/gunung2.png">
+          </div>
+          <div id="modalz1" class="modalz-overlay">
+            <div class="modalz-content">
+              <div class="modalz-title">
+                Title: POPOPO Motivation
+              </div>
+              <div class="modalz-body">
+                <video src="images/dvideo.mp4" autobuffer controls poster="images/dummy/gunung0.png"></video>
+                <a href="javascript:void(0)" id="cloze" onclick="clozez(2)"><i class="fas fa-times"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -534,37 +578,7 @@
   	  			<p>Thing what we make is thing what you need. <br>An enormous apps that help you a lot
   	  		<div class="linez-decor midz"></div>
 		  </div>
-  		<!-- <div class="row npm eventtoko">
-  			<div class="col-md-3 npm">
-  				<div class="col-md-12 npm">
-  					<img src="images/dummy/d_rocket.png">
-  				</div>
-  				<div class="col-md-12 npm">
-  					asd
-  				</div>
-  			</div>
-  			<div class="col-md-3 npm">
-  				<div class="col-md-12 npm">
-  					asd
-  				</div>
-  				<div class="col-md-12 npm">
-  					asd
-  				</div>
-  			</div>
-  			<div class="col-md-3 npm">
-  				<div class="col-md-12 npm" style="height: 500px">
-  					asd
-  				</div>
-  			</div>
-  			<div class="col-md-3 npm">
-  				<div class="col-md-12 npm">
-  					asd
-  				</div>
-  				<div class="col-md-12 npm">
-  					asd
-  				</div>
-  			</div>
-  		</div> -->
+  		
       <div class="cellz-1 imgz-wrap">
         <img src="images/dummy/gunung1.png" class="imgz-wrap_img-eventshop--mostpop">
       </div>
@@ -746,16 +760,28 @@
   			}
   			slidezIndex++;
   			if (slidezIndex > slidez.length){ slidezIndex = 1 }
-  			// for (i=0; i<dotz.length; i++){
-  			// 	//dotz[i].addClass('').removeClass(' active');
-  			// 	dotz[i].className = dotz[i].className.replace(" active", "");
-  			// }
   			slidez[slidezIndex-1].style.display	= "block";
-  			// slidez[slidezIndex-1].style.marginLeft = "0%";
-  			// dotz[slidezIndex-1].className 		+= " active";
   			setTimeout(showSlidez, 5000)
   		}
   	</script>
+    <script type="text/javascript">
+      var modal   = $(".modalz-overlay");
+      var xbut    = $("#cloze");
+
+      function showvideo(numb) {
+        var i;
+        for (i = 0; i < modal.length; i++) {
+            modal[numb].style.display = "block";
+        } 
+      } 
+
+      function clozez(numbz){
+        var i;
+        for (i = 0; i < xbut.length; i++) {
+          modal[numbz].style.display = "none";
+        }
+      }     
+    </script>
     <script src="js/wzk/mezky.js"></script>
   	<script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>

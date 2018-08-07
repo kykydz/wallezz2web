@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
 
 }
-div { border: solid 1px black }
+/*div { border: solid 1px black }*/
 .npm {
     padding: 0;
     margin: 0
@@ -336,6 +336,21 @@ span.bolder0 { color: #0e52de }
 #sectmu .contentz-side img{
     max-width: 70%;
 }
+.stemz_conh_imgwrapp--portrait-sectmu {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.stemz_conh_imgwrapp--portrait-sectmu img{
+    max-width: 160% !important;
+    /*width: 160%;*/
+    /* max-height: 100%; */
+    position: absolute;
+    /* position: relative; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /*----------SECTION benefit--------------------*/
 /*.contentz-side video {
@@ -476,6 +491,7 @@ span.bolder0 { color: #0e52de }
 .video-content {
     height: 500px;
     overflow: hidden;
+    position: relative;
 }
 .video-content img{
     width: 100%;
@@ -483,8 +499,62 @@ span.bolder0 { color: #0e52de }
     object-fit: cover;
     overflow: hidden;
 }
-
-
+/*.video-content:hover > .overlay-dark {
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}*/
+.overlayz {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlayz a {
+    text-decoration: none;
+    color: white;
+    font-size: 34px;
+}
+.modalz-overlay {
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.modalz-content {
+    display: flex;
+    flex-flow: column;
+    /*justify-content: center;
+    align-content: center;
+    align-self: center;*/
+    align-items: center;
+    padding-top: 3%;
+}
+.modalz-content video{
+    max-width: 90vw;
+    float: left;
+}
+.modalz-title{
+    font-weight: 600;
+    color: white;
+    font-size: 2em;
+    padding-bottom: 1%;
+}
+.modalz-body { display: inline-block; } 
+.modalz-body a,i {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    padding-left: 10px;
+}
 /*----------Section Partnership---------*/
 #sectpartnership {
     background-color: white;
