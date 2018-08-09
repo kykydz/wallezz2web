@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/animaze.css">
+  <link rel="stylesheet" type="text/css" href="css/wza.css">
 	<!-- <script type="text/javascript" src="js/prior.min.js"></script> -->
 	<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
 </head>
@@ -683,32 +684,32 @@
     <section id="contactus">
       <div class="stemz">
         <div class="cellz-d2">
-          <form class="formz">
+          <form class="formz formz--contactus">
             <div class="form-inlinez">
-              <input type="text" class="form-inlinez_input" >  
+              <input type="text" class="form-inlinez_input" placeholder="Nama">  
             </div>
             <div class="form-inlinez">
-              <input type="text" class="form-inlinez_input" >  
+              <input type="text" class="form-inlinez_input" placeholder="Email">  
             </div>
             <div class="form-inlinez">  
               <textarea id="ta-comment" maxlength="420" class="form-inlinez_input" placeholder="Max. 420 character"></textarea>
             </div>
+            <a href="" class="formz_submit-elem" onclick="submitz()">
+              <img src="images/decor/plane-contact.png" class="cus-img--decor1">
+            </a>
+            
           </form>
         </div>
         <div class="cellz-d2">
           <div class="cus_img-wrapper">
             <h2 class="title-sect">Talk to Us</h2>
             
-            <img src="images/decor/plane-contact.png" class="cus-img--decor1">
             <!-- <img src="images/decor/cloud-contact.png" class="cus-img--decor2"> -->
             <img src="images/decor/cloud-contact2.png" class="cus-img--decor3">
           </div>
         </div>
       </div>
-    </section>
-
-    <footer id="footerz">
-      <div class="stemz">
+      <div id="footerz" class="stemz">
         <div class="cellz-3">
           <img src="images/wallezzputih.png" width="80">
         </div>
@@ -734,10 +735,14 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <footer >
+      
     </footer>
     
 
-  	<script type="text/javascript">
+  	<script>
   		function myFunction() {
 		    var x = document.getElementById("myTopnav");
 		    if (x.className === "topnav") {
@@ -745,7 +750,7 @@
 		    } else {
 		        x.className = "topnav";
 		    }
-		}
+		  }
   	</script>
   	<script type="text/javascript">
   		var slidezIndex = 0;
@@ -782,7 +787,7 @@
         }
       }     
     </script>
-    <script src="js/wzk/mezky.js"></script>
+    <!-- <script src="js/wzk/mezky.js"></script> -->
   	<script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
 </div>

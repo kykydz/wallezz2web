@@ -319,11 +319,11 @@ span.bolder0 { color: #0e52de }
     /*background: linear-gradient(to right, rgba(42,160,250,1) 0%, rgba(0,45,209,1) 100%);*/
     /*background-color: #E84176;*/
     /*background: linear-gradient(to right, rgba(21,188,221,1) 0%, rgba(21,188,221,1) 50%, */
-        rgba(232,65,118,1) 50%, rgba(232,65,118,1) 100%);
+        /*rgba(232,65,118,1) 50%, rgba(232,65,118,1) 100%);*/
     /*background: linear-gradient(to right, rgba(232,65,118,1) 0%, rgba(232,65,118,1) 50%, 
         rgba(21,188,221,1) 50%, rgba(21,188,221,1) 100%);
         */
-    background: linear-gradient(to right, #dd3366 0%, #dd3366 26%, #f24e85 50%, #00bcdd 50%, #00bcdd 50%, #00bcdd 50%, #1188dd 74%, #1188dd 100%);
+    background: linear-gradient(to right, #dd3366 0%, #dd3366 26%, #f24e85 40%, #00bcdd 50%, #00bcdd 40%, #00bcdd 50%, #1188dd 74%, #1188dd 100%);
     padding-bottom: 7%;
     color: white;
 }
@@ -777,6 +777,7 @@ a.btn-extra {
 /*---------CONTACT US--------------------*/
 section#contactus {
     /*overflow: hidden;*/
+    overflow: hidden;
 }
 .formz { 
     margin: 5% 15%; 
@@ -784,6 +785,17 @@ section#contactus {
 .form-inlinez {
     display: block;
     padding: 2% 1%;
+}
+form.formz.formz--contactus {
+    position: relative;
+}
+a.formz_submit-elem {
+    text-decoration: none;
+    position: absolute;
+    right: -210px;
+    top: 60px;
+    width: 30%;
+    transform: scaleX(1);
 }
 textarea,input.form-inlinez_input {
     width: 100%;
@@ -794,7 +806,7 @@ textarea,input.form-inlinez_input {
     border-bottom-left-radius: 25px;*/
 }
 #ta-comment {
-    height: 180px;
+    min-height: 180px;
     max-height: 250px;
 }
 #ta-comment::-webkit-scrollbar {
@@ -819,11 +831,11 @@ textarea,input.form-inlinez_input {
     top: 41px;
 }
 img.cus-img--decor1 {
-    position: absolute;
-    left: -30px;
-    top: 60px;
-    width: 25%;
-    transform: scaleX(-1);
+    /* position: absolute; */
+    /* right: -210px; */
+    /* top: 60px; */
+    width: 100%;
+    /* transform: scaleX(1); */
 }
 img.cus-img--decor2 {
     position: absolute;
@@ -838,6 +850,7 @@ img.cus-img--decor3 {
     top: 100px;
     opacity: 0.5;
     width: 90%;
+    transform: translateX(1);
 }
 /*----------------FOOTER-----------------*/
 #footerz {

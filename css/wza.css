@@ -1,0 +1,14 @@
+/*---------Anim Contact us-----------------*/
+a.formz_submit-elem {
+	animation-name: planeSby;
+	animation-duration: 4s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+@keyframes planeSby {
+	0%		{ top: 60px; }
+	25%		{ right: -200px; }
+	50%		{ top: 40px; }
+	75%		{ right: -210px; }
+	100%	{ top: 60px; }
+}
