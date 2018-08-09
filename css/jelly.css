@@ -1,0 +1,36 @@
+/*-----------nav bar section -----------------*/
+@media screen and (max-width: 850px) {
+	.wzbar { 
+		justify-content: space-between; 
+		flex-wrap: wrap;
+		height: 100%;
+	}
+	.brandz { 
+		order: 1;
+		flex: 0 0 10%;
+	}
+	.menuz { 
+		order: 3; 
+		display: none;
+		flex-flow: column wrap;
+	}
+  	.barz-nav { 
+  		order: 2;
+  		display: block; 
+  		float: right;
+  		flex: 0 0 90%;
+  		text-align: right;
+  	}
+
+  	/*------------Merchant User -------------*/
+  	.contentz-side.img-mu {
+	    display: none;
+	}
+
+	/*------------Merchant User -------------*/
+	.add-outter {
+		flex-flow: column wrap;
+	}
+	.video-title { order: 1; }
+	.video-content { order: 2; }
+}

@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
 
 }
-/*div { border: solid 1px black }*/
+div { border: solid 1px black }
 .npm {
     padding: 0;
     margin: 0
@@ -125,9 +125,9 @@ span.bolder0.ft-wht { color: white }
     position: relative;
 }
 
-/*---------------ABOUT WALLEZZ-------------*/
+/*-------------- Menu Bar -------------*/
 .wzbar {
-  height: 60px;
+    height: 60px;
     /*background: linear-gradient(to right, rgba(42,160,250,1) 0%, rgba(0,45,209,1) 100%);*/
     background: linear-gradient(to right, rgba(138,117,255,0.1) 0%, rgba(138,0,207,0.2) 100%);
     padding: 10px 3%;
@@ -136,6 +136,9 @@ span.bolder0.ft-wht { color: white }
     align-items: center;
     font-size: 18px;
     color: white;
+}
+.wzbargell {
+    
 }
 .brandz { 
     padding-right: 1%;
@@ -155,7 +158,13 @@ span.bolder0.ft-wht { color: white }
     padding: 10px 15px;
     opacity: 0.8;
 }
-i.dropmenuz { display: none }
+.barz-nav { 
+    display: none; 
+}
+.wzbarjel {
+    display: block !important;
+}
+.barz-nav i.fas.fa-bars { font-size:24px; }
 
 /*============Landing=====================*/
 #landingz {
@@ -299,14 +308,14 @@ span.bolder0 { color: #0e52de }
     /*align-items: center;*/
 }
 .img-side1 {
-    height: 500px;
-    object-fit: contain;
-    overflow: hidden;
+    height: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .img-side1 img{
-    /*object-fit: none;*/
-    width: 42%;
+    max-width: 40%;
 }
 .img-sider {
     flex: 1 auto;
@@ -367,7 +376,9 @@ span.bolder0 { color: #0e52de }
     letter-spacing: 1px;
     text-shadow: grey 0px 0px 4px;
 }
-
+.contentz-side.img-mu {
+        display: block;
+    }
 
 /*---------------SECTION FEATURE--------------*/
 .box-domino {
@@ -483,7 +494,6 @@ span.bolder0 { color: #0e52de }
 }
 .add-outter {
     padding: 2% 2%;
-    flex-flow: row wrap;
 }
 .video-title h3 {
     font-weight: 600;
@@ -498,6 +508,7 @@ span.bolder0 { color: #0e52de }
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    order: 1;
 }
 /*.video-content:hover > .overlay-dark {
     background-color: black;
@@ -555,6 +566,13 @@ span.bolder0 { color: #0e52de }
     font-size: 40px;
     padding-left: 10px;
 }
+.video-title { order: 2; }
+.cellz-d3.pdz2.walik {
+    display: flex;
+    flex-flow: column;
+}
+
+
 /*----------Section Partnership---------*/
 #sectpartnership {
     background-color: white;

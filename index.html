@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Wallezz</title>
 	<link rel="stylesheet" type="text/css" href="css/prior.min.css">
 	<link rel="stylesheet" href="css/wz.css">
@@ -10,14 +11,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/animaze.css">
   <link rel="stylesheet" type="text/css" href="css/wza.css">
+  <link rel="stylesheet" type="text/css" href="css/jelly.css">
 	<!-- <script type="text/javascript" src="js/prior.min.js"></script> -->
 	<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
 </head>
 <body>
-  	<div class="wzbar">
+  	<div id="mynavz" class="wzbar" >
   		<div class="brandz"><img src="images/wallezzputih.png" alt=""></div>
-  		<div class="brandz-font"></div>
-  		<div class="menuz">
+  		<!-- <div class="brandz-font"></div> -->
+  		<div class="menuz" id="mymenuz">
   			<div class="m-itemz">FEATURE</div>
   			<div class="m-itemz">PARTNERSHIP</div>
   			<div class="m-itemz">TEAM</div>
@@ -27,7 +29,7 @@
   			<div class="m-itemz">FAQ</div>
   			<div class="m-itemz">DOWNLOAD</div>
   		</div>
-  		<div><i class="fas fa-bars dropmenuz"></i></div>
+  		<div class="barz-nav"><i class="fas fa-bars" onclick="navmenuz()"></i></div>
   	</div>
 
   	<section id="landingz">
@@ -129,7 +131,7 @@
   					</div>
   				</div>
   			</div>
-  			<div class="contentz-side">
+  			<div class="contentz-side img-mu">
           <div class="stemz_conh_imgwrapp--portrait-sectmu">
             <img src="images/mcus.png">
           </div>
@@ -241,7 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="cellz-d3 pdz2">
+        <div class="cellz-d3 pdz2 walik">
           <div class="video-content">
             <div class="overlayz">
               <a onclick="showvideo(1)"><i class="fas fa-play-circle"></i></a>
@@ -742,16 +744,7 @@
     </footer>
     
 
-  	<script>
-  		function myFunction() {
-		    var x = document.getElementById("myTopnav");
-		    if (x.className === "topnav") {
-		        x.className += " responsive";
-		    } else {
-		        x.className = "topnav";
-		    }
-		  }
-  	</script>
+
   	<script type="text/javascript">
   		var slidezIndex = 0;
   		showSlidez();
@@ -787,7 +780,7 @@
         }
       }     
     </script>
-    <!-- <script src="js/wzk/mezky.js"></script> -->
+    <script src="js/wzk/mezky.js"></script>
   	<script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
 </div>
