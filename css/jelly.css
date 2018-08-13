@@ -26,11 +26,17 @@
   	.contentz-side.img-mu {
 	    display: none;
 	}
+	.contentz-full {
+		flex-flow: column wrap;
+	}
 
-	/*------------Merchant User -------------*/
+	/*------------ Gambar Video -------------*/
 	.add-outter {
 		flex-flow: column wrap;
 	}
 	.video-title { order: 1; }
 	.video-content { order: 2; }
+
+	/*------------ Section Merchant User -------------*/
+	.blocktitlemu {display: block };
 }

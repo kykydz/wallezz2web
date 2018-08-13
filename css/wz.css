@@ -293,7 +293,7 @@ h1,h2,h3.title-sec {
     text-align: right;
 }
 .add-lr-pd {
-    padding: 5%;
+    /*padding: 5%;*/
     /*padding-left: 5%;
     padding-right: 5%;*/
 }
@@ -360,6 +360,7 @@ span.bolder0 { color: #0e52de }
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.blocktitlemu { display: none; }
 
 /*----------SECTION benefit--------------------*/
 /*.contentz-side video {

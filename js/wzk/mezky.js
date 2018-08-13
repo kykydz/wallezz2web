@@ -13,6 +13,9 @@ function jellyVideoPhoto(){
   if (qw <= 850 ){
     for (var i = 0; i < vidti.length; i++) {
       vidti[1].innerHTML = "";
+      console.log(i);
     }
   }
 }
+
+
