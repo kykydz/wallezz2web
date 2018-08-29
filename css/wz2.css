@@ -3,12 +3,22 @@ ul, li {
 }
 body {
 	background: linear-gradient(to right, rgb(239, 245, 248) 0%, rgb(215, 224, 255) 100%);
+	font-family: 'Montserrat', sans-serif;
 }
 a {	text-decoration: none; }
 a:hover {	text-decoration: none; }
+.img-full {
+	width: 100%;
+	height: auto;
+}
 
+.carousel-inner {
+	/*height: 500px;*/
+}
 /*-------------------  My navz ---------------*/
 .mynavz {
+	position: fixed;
+	z-index: 1;
 	background: linear-gradient(
 		to right, 
 		rgba(42,160,250,1) 0%, 
@@ -16,6 +26,7 @@ a:hover {	text-decoration: none; }
 	/*background-color: purple;*/
 	padding: 1em 0 1.3em 0;
 	/*display: inline-block;*/
+	width: 100%;
 	box-shadow: 0px 3px 20px -2px rgba(0,0,0,0.75);
 }
 .navz {
@@ -40,4 +51,140 @@ a:hover {	text-decoration: none; }
 	font-size: 1.5em;
 	font-weight: 300;
 	padding-left: 0.2em; 
+}
+
+.containz {
+	padding: 4%;
+}
+/*-----------MITRA ----------------------*/
+#mitra {
+	position: absolute;
+	/*z-index: 2;*/
+	margin-top: -25%;
+	width: 100%;
+	height: 300px;
+	background-color: rgba(0, 0, 0, 0.0);
+	color: black !important;
+}
+#mitra h3{
+	color: black;
+	padding: 0;
+	letter-spacing: 1px;
+	font-weight: 600;
+	text-align: center;
+}
+img.mitra-logo {
+	max-width: 100%;
+    /*height: 23%; */
+    max-height: 150px;
+    /* width: auto; */
+    padding: 20%;
+}
+
+
+/*-----------FEATURE PRODUCT-------------*/
+.feat-desc h3{
+	color: #5c5a5a;;
+	/*-webkit-text-stroke: 0.2px;*/
+}
+.feat-desc p{
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}
+#sect1feature {
+	padding-bottom: 3%;
+}
+
+
+/*------------ STRATEGIEST -----------------*/
+.small-iconz {
+	width: 40px;
+	padding: 3% 0;
+}
+.title-stra {
+	font-weight: 600;
+	-webkit-text-stroke: 1px;
+	letter-spacing: 1px;
+	color: #797878;
+}
+.stra-content {
+	padding: 2%;
+}
+#strategiez h4{
+	font-size: 0.9em;
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px;
+    letter-spacing: 1px;
+    color: #5d5d5e;
+    padding-bottom: 2%;
+}
+.stra-content p{
+	text-align: justify;
+}
+
+
+/*------------ PORTOFOLIO ------------------- */
+#portofolio {
+	background-color: white;
+}
+.img-portf {
+	height: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+	.img-portf--pd {
+		padding: 0.8%;
+	}
+	.img-portf_ovlyclick {
+		display: none;
+		position: absolute;
+	    z-index: 0;
+	    height: 100%;
+	    width: 100%;
+	    background-color: rgba(0,0,0,0.3);
+	    color: transparent;
+	    justify-content: center;
+	    align-items: center;
+	    transition: 5s;
+	}
+	.porto-gallery:hover > .img-portf_ovlyclick {
+		display: flex;
+		color: white;
+	}
+
+.porto-gallery {
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+}
+	.porto-gallery--lands {
+		flex: 0 0 50%;
+		max-width: 50%;
+		height: 250px;
+	}
+
+
+/*-------------CONTaCT US ------------*/
+#footerz {
+	height: 100%;
+}
+img.cus-img--decor3 {
+	z-index: 0;
+}
+.shadowed {
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12,
+Color='#444')";
+	filter: url(#drop-shadow);
+	-webkit-filter: drop-shadow(2px 5px 5px rgba(0,0,0,0.6));
+	filter: drop-shadow(2px 5px 5px rgba(0,0,0,0.6));
+}
+
+.contactus--w2 {
+	background: linear-gradient(
+		to top, 
+		rgb(40, 107, 96) 0%, 
+		rgb(30, 154, 134) 50%, 
+		rgb(199, 255, 245) 100%);
 }

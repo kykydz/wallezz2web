@@ -42,7 +42,8 @@ span.thiner0 {
     width: 10%;
 }
 .flexz { display: flex; }
-.flexz-col { display: flex; flex-flow: column; }
+.flexz-col { display: flex; flex-flow: column nowrap; }
+.flexz-row { display: flex; flex-flow: row wrap; }
 .flexz-wrapp { flex-wrap: wrap }
 .midz { align-items: center; flex-flow: column; }
 .midz2 { 
@@ -81,15 +82,21 @@ span.bolder0.ft-wht { color: white }
 .cellz-d3 { flex: 1 1 calc(100%/3); }
 .cellz-d4 { flex: 0 0 25%; max-width: 25%;}
 .cellz-d2 { flex: 0 0 calc(100%/2); }
+.cellz-d8 { flex: 0 0 calc(100%/8); max-width: calc(100%/8); text-align: center; }
+.cellz-d10 { flex: 0 0 calc(100%/10); max-width: calc(100%/10); }
 
 .cellz-1 { flex: 0 0 100%; max-width: 100%}
 .cellz-2 { flex: 0 0 20%; max-width: 20%}
 .cellz-10 { flex: 0 0 calc(100%/10); }
 .cellz-3 { flex: 0 0 30%; max-width: 30%;}
 .cellz-4 { flex: 0 0 40%; max-width: 40%;}
-
+.cellz-6 { flex: 0 0 60%; max-width: 60%;}
 .cellz-7 { flex: 0 0 70%; max-width: 70%;} 
 .cellz-5 { flex: 0 0 50%; max-width: 50%;}
+
+.cellz-flexy {
+
+}
 .labelz {
     border-radius: 25px;
     background-color: white;
@@ -768,16 +775,8 @@ a.btn-extra {
     transition: 0.6s;
 }
 .stemz_conh_imgwrapp--portrait:hover > .stemz_conh_imgwrapp_category {
-    position: absolute;
-    z-index: 1;
     height: 100%;
-    width: 100%;
-    opacity: 0.6;
-    background-color: black;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .stemz_conh_imgwrapp:hover > .stemz_conh_imgwrapp_category {
     position: absolute;
