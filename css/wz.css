@@ -169,8 +169,8 @@ span.bolder0.ft-wht { color: white }
     display: none; 
 }
 .wzbarjel {
-    height: 100%;
-    /*display: block !important;*/
+    /*height: 100%;*/
+    display: block !important;
 }
 .barz-nav i.fas.fa-bars { font-size:24px; }
 
