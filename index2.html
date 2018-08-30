@@ -17,18 +17,34 @@
 	<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
 </head>
 <body class="mod2">	
-	<nav class="mynavz">
+	<div id="mynavz" class="wzbar" >
+  		<div class="brandz"><img src="images/wallezzputih.png" alt=""></div>
+  		<!-- <div class="brandz-font"></div> -->
+  		<div class="menuz" id="mymenuz">
+  			<div class="m-itemz">SMARTCITY</div>
+  			<div class="m-itemz">OBABAS</div>
+  			<div class="m-itemz">PRODUK</div>
+  			<div class="m-itemz">KONTAK</div>
+  			<div class="m-itemz pagar">|</div>
+  			<div class="m-itemz"><img src="images/falg.png" width="20"></div>
+  		</div>
+  		<div class="barz-nav"><i class="fas fa-bars" onclick="navmenuz()"></i></div>
+  	</div>
+	<!-- <nav class="mynavz">
+		<div class="navz-brand">
+			<a href="" title=""><img src="images/wallezzputih.png" width="50"></a>
+		</div>
 		<ul class="navz">
-			<li class="navz-item navz-brand"><a href="" title=""><img src="images/wallezzputih.png" width="50"></a></li>
 			<li class="navz-item"><a href="" title="">SMARTCITY</a></li>
 			<li class="navz-item"><a href="" title="">OBABAS</a></li>
 			<li class="navz-item"><a href="" title="">PRODUK</a></li>
 			<li class="navz-item"><a href="" title="">KONTAK</a></li>
 			<li class="navz-item"><a href="" title="">FAQ</a></li>
-			<li class="navz-item langz">|</li>
+			<li class="navz-item langz pagar">|</li>
 			<li class="navz-item langz"><img src="images/falg.png" width="20"></li>
 		</ul>
-	</nav>
+		<i id="menuzz" class="fas fa-bars"></i>
+	</nav> -->
 	<div id="sliderControl" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 		    <div class="carousel-item active">
@@ -52,7 +68,7 @@
 	</div>
 
 	<section id="mitra">
-		<div class="wlicensed">
+		<div class="wlicensed pdlr5">
 			Wallezz has Registered at
 			<div class="flexz-row">
 				<div class="">
@@ -205,9 +221,9 @@
     			WALLEZZ SMART CITY STRATEGIES <br>
     			AND SOLUTIONS
     		</div>
-    		<div class="flexz-row">
-    			<div class="cellz-6">
-    				<div class="flexz-row">
+    		<div class="flexz-row feat-cont">
+    			<div class="cellz-6 leftside-stra">
+    				<div class="flexz-row ">
     					<div class="cellz-5 stra-content">
     						<div class="iconz-stra">
     							<img src="images/iconz/PENINGKATAN pad.png" class="small-iconz">
@@ -238,7 +254,7 @@
     					</div>
     				</div>
     			</div>
-    			<div class="cellz-4">
+    			<div class="cellz-4 img-feat-stra">
     				<img src="images/image 1.jpg" class="img-full">
     			</div>
     		</div>
@@ -253,28 +269,19 @@
     				<div class="porto-gallery">
     					<img src="images/dummy/gunung2.png" class="img-portf">
     					<div class="img-portf_ovlyclick">
-    						<i class="fas fa-play-circle"></i>
-    					</div>	
-    				</div>
-    			</div>
-    			<div class="cellz-d4 img-portf--pd">
-    				<div class="porto-gallery">
-    					<img src="images/dummy/gunung2.png" class="img-portf">	
-    				</div>
-    			</div>
-    			<div class="cellz-d2 img-portf--pd">
-    				<div class="porto-gallery">
-    					<img src="images/dummy/gunung2.png" class="img-portf">	
-    				</div>
-    			</div>
-    			<div class="cellz-d4 img-portf--pd">
-    				<div class="porto-gallery">
-    					<img src="images/dummy/gunung2.png" class="img-portf">	
-    				</div>
-    			</div>
-    			<div class="cellz-d4 img-portf--pd">
-    				<div class="porto-gallery">
-    					<img src="images/dummy/gunung2.png" class="img-portf">	
+    						<i onclick="openvidz(0)" class="fas fa-play-circle"></i>
+    					</div>
+    					<div id="modalz1" class="modalz-overlay">
+				            <div class="modalz-content">
+				              	<div class="modalz-title">
+				                	Title: Ocean Motivation
+				              	</div>
+				              	<div class="modalz-body">
+				                	<video id="vid1" src="images/dvideo.mp4" autobuffer controls poster="images/dummy/gunung2.png"></video>
+				                	<a href="javascript:void(0)" id="cloze" onclick="clozez(0)"><i class="fas fa-times"></i></a>
+				              	</div>
+				            </div>
+				        </div>	
     				</div>
     			</div>
     			<div class="cellz-d4 img-portf--pd">
@@ -285,6 +292,45 @@
     			<div class="cellz-d4 img-portf--pd">
     				<div class="porto-gallery">
     					<img src="images/dummy/gunung2.png" class="img-portf">	
+    				</div>
+    			</div>
+    			<div class="cellz-d4 img-portf--pd">
+    				<div class="porto-gallery">
+    					<img src="images/dummy/gunung2.png" class="img-portf">	
+    				</div>
+    			</div>
+    			<div class="cellz-d4 img-portf--pd">
+    				<div class="porto-gallery">
+    					<img src="images/dummy/gunung2.png" class="img-portf">	
+    				</div>
+    			</div>
+    			<div class="cellz-d4 img-portf--pd">
+    				<div class="porto-gallery">
+    					<img src="images/dummy/gunung2.png" class="img-portf">	
+    				</div>
+    			</div>
+    			<div class="cellz-d4 img-portf--pd">
+    				<div class="porto-gallery">
+    					<img src="images/dummy/gunung2.png" class="img-portf">	
+    				</div>
+    			</div>
+    			<div class="cellz-d4 img-portf--pd">
+    				<div class="porto-gallery">
+    					<img src="images/dummy/gunung2.png" class="img-portf">
+    					<div class="img-portf_ovlyclick">
+    						<i onclick="openvidz(1)" class="fas fa-play-circle"></i>
+    					</div>
+    					<div id="modalz1" class="modalz-overlay">
+				            <div class="modalz-content">
+				              	<div class="modalz-title">
+				                	Title: Ocean Motivation
+				              	</div>
+				              	<div class="modalz-body">
+				                	<video id="vid1" src="images/dvideo.mp4" autobuffer controls poster="images/dummy/gunung2.png"></video>
+				                	<a href="javascript:void(0)" id="cloze" onclick="clozez(1)"><i class="fas fa-times"></i></a>
+				              	</div>
+				            </div>
+				        </div>	
     				</div>
     			</div>
     		</div>
@@ -293,8 +339,8 @@
 
 
     <section id="contactus" class="contactus--w2">
-      	<div class="stemz">
-	        <div class="cellz-d2">
+      	<div id="container-form" class="stemz">
+	        <div id="form-z" class="cellz-d2">
 	          	<form class="formz formz--contactus">
 		            <div class="form-inlinez">
 		              	<input type="text" class="form-inlinez_input" placeholder="Nama">  
@@ -310,7 +356,7 @@
 		            </a>
 	          	</form>
 	        </div>
-	        <div class="cellz-d2">
+	        <div class="cellz-d2 dstry">
 	          	<div class="cus_img-wrapper">
 	            	<h2 class="title-sect">Talk to Us</h2>
 	            	<!-- <img src="images/decor/cloud-contact.png" class="cus-img--decor2"> -->
@@ -349,10 +395,35 @@
 
 	<script src="js/prior.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/wzk/mezky.js"></script>
     <script>
     	$('.carousel').carousel({
     		interval: 100000
     	});
+    </script>
+
+    <script type="text/javascript">
+    	var modals 	= $('.modalz-overlay');
+    	var close 	= $('#cloze');
+    	var vid1	= $('#vid1');
+    	var noscrol	= $('.mod2');
+    	var jn=0;
+    	for (var i = 0; i < modals.length; i++) {
+    		console.log(jn);
+	    	function openvidz(jn){
+	    		console.log(jn);
+	    		noscrol[jn].style.overflow	= "hidden";
+	    		modals[jn].style.display	= "block";
+	    		vid1[jn].play();
+	    	}
+	    	function clozez(jn){
+	    		noscrol[jn].style.overflow	= "unset";
+	    		modals[jn].style.display	= "none";
+	    		vid1[jn].pause();
+	    	}
+	    	jn++;
+	    	console.log(jn);
+	    }
     </script>
 </body>
 </html>

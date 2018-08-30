@@ -13,6 +13,7 @@
 		order: 3; 
 		display: none;
 		flex-flow: column wrap;
+		height: 0;
 	}
   	.barz-nav { 
   		order: 2;
