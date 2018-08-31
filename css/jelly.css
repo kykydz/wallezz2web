@@ -3,7 +3,6 @@
 	.wzbar { 
 		justify-content: space-between; 
 		flex-wrap: wrap;
-		height: 100%;
 	}
 	.brandz { 
 		order: 1;
@@ -13,7 +12,7 @@
 		order: 3; 
 		display: none;
 		flex-flow: column wrap;
-		/*height: 0;*/
+		height: 0%;
 	}
   	.barz-nav { 
   		order: 2;
