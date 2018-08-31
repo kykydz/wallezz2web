@@ -191,6 +191,7 @@ img.mitra-logo {
 /*------------ PORTOFOLIO ------------------- */
 #portofolio {
 	background-color: white;
+	font-weight: bold;
 }
 .img-portf {
 	height: 120%;
