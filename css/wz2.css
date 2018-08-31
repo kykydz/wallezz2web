@@ -12,9 +12,7 @@ a:hover {	text-decoration: none; }
 	height: auto;
 }
 
-.carousel-inner {
-	/*height: 500px;*/
-}
+
 /*-------------------  My navz ---------------*/
 #mynavz {
 	background: linear-gradient(to right, rgba(42,160,250,1) 0%, rgba(0,45,209,1) 100%);
