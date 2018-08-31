@@ -134,7 +134,7 @@ span.bolder0.ft-wht { color: white }
 
 /*-------------- Menu Bar -------------*/
 .wzbar {
-    height: 60px;
+    /*height: 60px;*/
     /*background: linear-gradient(to right, rgba(42,160,250,1) 0%, rgba(0,45,209,1) 100%);*/
     background: linear-gradient(to right, rgba(138,117,255,0.1) 0%, rgba(138,0,207,0.2) 100%);
     padding: 10px 3%;
@@ -169,7 +169,8 @@ span.bolder0.ft-wht { color: white }
     display: none; 
 }
 .wzbarjel {
-    /*height: 100%;*/
+    transition: .8s;
+    height: 100%;
     display: block !important;
 }
 .barz-nav i.fas.fa-bars { font-size:24px; }
