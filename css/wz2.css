@@ -27,7 +27,6 @@ a:hover {	text-decoration: none; }
 		to right, 
 		rgba(42,160,250,1) 0%, 
 		rgba(0,45,209,1) 100%);
-	/*background-color: purple;*/
 	padding: 1em 0 1em 0;
 	/*display: inline-block;*/
 	width: 100%;
@@ -101,7 +100,6 @@ a:hover {	text-decoration: none; }
 	/*z-index: 2;*/
 	margin-top: -20%;
 	width: 100%;
-	/*height: 300px;*/
 	background-color: rgba(0, 0, 0, 0.0);
 	color: black !important;
 }
