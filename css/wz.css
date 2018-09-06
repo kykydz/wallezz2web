@@ -35,7 +35,6 @@ span.subtitle1 {
 a.btn.blinkz {
     text-decoration: none;
     color: white;
-    /*background-color: #007bff;*/
     background-color: transparent;
     border-radius: 25px;
     /*box-shadow: 0px 3px 5px 0px #c2c2c2;*/
@@ -45,7 +44,6 @@ a.btn.blinkz {
 a.btn.blinkz:hover {
     margin-top: -5px;
     color: transparent;
-    /*background-color: #E84176;*/
     background-color: white;
     color: #E84176;
 }
