@@ -12,6 +12,24 @@ a:hover {	text-decoration: none; }
 	height: auto;
 }
 
+.versi2 {
+	position: fixed;
+	z-index: 4;
+	left: 0;
+	bottom: 0;
+	background-color: purple;
+	padding: 1%;
+	color: white;
+	font-family: 'Gamja Flower', cursive;
+}
+	.versi2 a{
+		text-decoration: none;
+		color: white;
+		transition: .3s;
+	}
+		.versi2 a:hover{
+			font-size: 1.2em;
+		}
 
 /*-------------------  My navz ---------------*/
 #mynavz {
